@@ -1,0 +1,25 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+class Lists extends CI_Controller 
+{ 
+	public function index()
+	{
+            // Note Ajax Request
+            if (!$this->input->is_ajax_request()){
+                show_404();
+            }
+            
+            // Check For Token
+            if (!$this->security->check_get_token()){
+                die ($this->load->widget('cms/login_form'));
+            }
+            
+            // Only Editor
+            if (!$this->auth->isEditor() && !$this->auth->isAdmin()){
+                die ($this->load->widget('cms/login_form'));
+            }
+            
+            // View List
+            die ($this->load->widget('contact/lists'));
+	}
+}
+?>

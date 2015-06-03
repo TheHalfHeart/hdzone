@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+		<title>How to create custom jQuery Alert, Confirm and Promt Dialogs</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<meta name="description" content="This is a demonstration page." />
+		<meta name="keywords" content="alert, confirm, prompt, demo" />		
+		
+		<!-- Dependencies -->
+		<script src="jquery-1.7.1.min" type="text/javascript"></script>
+		<script src="jquery.ui.draggable.js" type="text/javascript"></script>
+		
+		<!-- Core files -->
+		<script src="jquery.alert.js" type="text/javascript"></script>
+		<link href="css/jalert.css" rel="stylesheet" type="text/css" media="screen" />
+		
+		<!-- Example script -->
+		<script type="text/javascript">
+			/*
+				jQuery document ready
+				You can also drag custom box.
+			*/
+			$(document).ready( function()
+			{
+				/*
+					attach click hanlder to input button with id of alert_button
+					and when user click on that button we will show custom alert.
+				*/
+				
+				/*
+					in example we pass event argument and use
+					preventDefaut function to stop furture click execution.
+					In short it will prevent our custom click execution from other event
+				*/
+
+				$("#alert_button").click( function(e)
+				{
+					e.preventDefault();
+					/*
+						jAlert is function which will show custom alert.
+						It has two argument.
+						First argument is content for alert.
+						Second is the Alert heading.
+					*/
+					jAlert('This is a custom alert box', 'Alert Dialog');
+				});
+
+				$("#confirm_button").click( function(e)
+				{
+					e.preventDefault();
+					/*
+						jConfirm is function which will show custom confirm box.
+						It has two argument.
+						First argument is message for confirmation.
+						Second is the Confirm heading.
+						and has callback function which will perform exatra 
+						code like what user select and etc
+					*/
+					jConfirm('Can you confirm this?', 'Confirmation Dialog', function(r)
+					{
+						jAlert('Confirmed: ' + r, 'Confirmation Results');
+					});
+				});
+
+				$("#prompt_button").click( function(e)
+				{
+					e.preventDefault();
+					/*
+						jPrompt is function which will show custom promt window.
+						It has three argument.
+						First argument is label text.
+						Second is the predefined value for promt.
+						Third is promt heading.
+						and has callback function which will perform exatra 
+						code like what user enter.
+					*/
+					jPrompt('Type something:', 'Prefilled value', 'Prompt Dialog', function(r)
+					{
+						if( r ) jAlert('You entered: ' + r, 'Result');
+					});
+				});
+			});
+			
+		</script>
+		
+	</head>
+	
+	<body>
+		
+		<h1>jQuery Alert Dialogs (Alert, Confirm, &amp; Prompt Replacements)</h1>
+		
+		<h2>Basic Examples</h2>
+		
+		<fieldset>
+			<legend>Alert</legend>
+			<p>
+				<input id="alert_button" type="button" value="Show Alert" />
+			</p>
+		</fieldset>
+		
+		
+		<fieldset>
+			<legend>Confirm</legend>
+			<p>
+				<input id="confirm_button" type="button" value="Show Confirm" />
+			</p>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Prompt</legend>
+			<p>
+				<input id="prompt_button" type="button" value="Show Prompt" />
+			</p>
+		</fieldset>
+		
+	</body>
+	
+</html>

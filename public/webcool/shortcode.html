@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="ie ie9"> <!--<![endif]-->
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+
+        <!-- Mobile Specific Metas
+        +++++++++++++++++++++++++++ -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="shortcut icon" href="http://www.gt3themes.com/website-templates/showroom/http://www.gt3themes.com/website-templates/showroom/img/favicon.ico">
+        <title>ShowRoom - Next amazing html5 portfolio template</title>
+
+        <!-- Styles
+        +++++++++++++ -->	
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/colors.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/base_responsive.css">
+        <!-- Fonts&Plugins -->
+        <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+        <link rel="stylesheet" type="text/css" href="css/tipsy.css" />
+        <link rel="stylesheet" type="text/css" href="css/portfolio_isotope.css" />
+        <link rel="stylesheet" href="css/camera.css">
+
+        <!-- Scripts
+        +++++++++++++ -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.8.2/jquery-ui.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+        <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+        <script type="text/javascript" src="js/hoverIntent.js"></script>
+        <script type="text/javascript" src="js/superfish.js"></script>
+        <script type="text/javascript" src="js/jquery.form.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="js/sorting.js"></script>
+        <script type='text/javascript' src='js/camera.min.js'></script>
+        <script type="text/javascript" src="js/jflickrfeed.js"></script>
+        <script type="text/javascript" src="js/jquery.tweet.js"></script>
+        <script type="text/javascript" src="js/fakeElement-grid.js"></script>
+        <script type="text/javascript" src="js/jquery.carousel.min.js" ></script>            
+        <script type="text/javascript" src="js/jquery.jplayer.min.js" ></script>    
+        <script type="text/javascript" src="js/jquery.masonry.min.js" ></script>
+        <!-- Main Scrip Run -->
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+
+
+    <body>
+        <img src="http://www.gt3themes.com/website-templates/showroom/img/my_preloader1.gif" id="preloader">
+        <!-- H E A D E R -->
+        <header>
+            <a href="home.html" class="logo"><img src="http://www.gt3themes.com/website-templates/showroom/img/logo.jpg" alt=""></a>
+            <script type="text/javascript">
+                var noAudio = false;
+                if (
+                        navigator.userAgent.match(/webOS/i) ||
+                        navigator.userAgent.match(/iPhone/i) ||
+                        navigator.userAgent.match(/iPod/i))
+                {
+                    noAudio = true;
+                }
+                $(document).ready(function() {
+                    if (!noAudio) {
+                        $("#jquery_jplayer_1").jPlayer({
+                            ready: function(event) {
+                                $(this).jPlayer("setMedia", {
+                                    mp3: "media/track.mp3",
+                                    oga: "media/track.ogg"
+                                });
+                            },
+                            swfPath: "js",
+                            supplied: "mp3, oga",
+                            wmode: "window"
+                        });
+                    }
+                });
+            </script>
+            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+            <div id="jp_container_1" class="jp-audio">
+                <div class="jp-type-single">
+                    <div class="jp-gui jp-interface">
+                        <div class="jp-controls">
+                            <a href="javascript:void(0)" class="jp-play"></a>
+                            <a href="javascript:void(0)" class="jp-pause"></a>					</div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="javascript:void(0)">portfolio</a>
+                        <ul class="sub-menu">
+                            <li><a href="portfolio1.html">1 Column</a></li>
+                            <li><a href="portfolio2.html">2 Columns</a></li>
+                            <li><a href="portfolio3.html">3 Columns</a></li>
+                            <li><a href="portfolio4.html">4 Columns</a></li>
+                            <li><a href="portfolio_grid.html">Grid Columns</a></li>
+                        </ul>
+                    </li>
+                    <li class="current-menu-item"><a href="javascript:void(0)">features</a>
+                        <ul class="sub-menu">
+                            <li><a href="typography.html">Typography</a></li>
+                            <li class="current-menu-item"><a href="shortcodes.html">Shortcodes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="masonry_blog.html">Masonry blog</a></li>
+                            <li><a href="blog_full.html">Full width</a></li>
+                            <li><a href="blogpost_full.html">Blog post</a></li>
+                            <li><a href="javascript:void(0)">With sidebar</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog_left.html">Left sidebar</a></li>
+                                    <li><a href="blog_right.html">Right sidebar</a></li>
+                                    <li><a href="blogpost_sidebar.html">Blog post</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">contacts</a>
+                        <ul class="sub-menu">
+                            <li><a href="contact_full.html">Full width</a></li>
+                            <li><a href="contact_sidebar.html">With sidebar</a></li>
+                        </ul>
+                    </li>                
+                </ul><!-- .menu -->
+            </nav>
+            <nav class="mobile_header">
+                <select id="mobile_select"></select>
+            </nav>        
+            <div class="clear"></div>
+        </header>
+        <!-- C O N T E N T -->
+        <div class="content_wrapper">
+            <div class="content_block">
+                <h1><span>shortcodes</span></h1>
+                <div class="breadcrumbs">
+                    <ul class="pathway">
+                        <li><a href="home.html">Home</a></li>
+                        <li class="sep">:</li>
+                        <li><a href="#">Features</a></li>
+                        <li class="sep">:</li>
+                        <li>Shortcodes</li>
+                    </ul>
+                </div><!-- .breadcrumbs -->
+                <div class="contentarea">
+                    <div class="row">                   	
+                        <div class="span_full">
+                            <h3>slider</h3>
+                            <!--Slider-->
+                            <div class="camera_slider">
+                                <div class="camera_wrap camera_azure_skin camera_slider_run">
+                                    <div data-thumb="http://www.gt3themes.com/website-templates/showroom/img/camera_slider/img1.jpg" data-src="http://www.gt3themes.com/website-templates/showroom/img/camera_slider/img1.jpg">
+                                        <div class="camera_caption fadeFromLeft">
+                                            <h3>sit amet</h3>
+                                            <p>Maecenas mattis suscipit neque vel consectetur. Vivamus sit amet diam mauris.</p>
+                                        </div>
+                                    </div>
+                                    <div  data-thumb="http://www.gt3themes.com/website-templates/showroom/img/camera_slider/img2.jpg" data-src="http://www.gt3themes.com/website-templates/showroom/img/camera_slider/img2.jpg">
+                                        <div class="camera_caption fadeFromLeft">
+                                            <h3>Nulla facilisi</h3>
+                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                                        </div>
+                                    </div>
+                                    <div  data-thumb="http://www.gt3themes.com/website-templates/showroom/img/camera_slider/img3.jpg" data-src="http://www.gt3themes.com/website-templates/showroom/img/camera_slider/img3.jpg">
+                                        <div class="camera_caption fadeFromLeft">
+                                            <h3>Nulla facilisi</h3>
+                                            <p>Vestibulum etus nulla, consectetur et euismod ut, imperdiet sed risus.</p>
+                                        </div>
+                                    </div>
+                                </div><!-- .camera_slider_run -->
+                                <div class="clear"><!-- ClearFix --></div>
+                            </div><!-- .camera_slider -->
+                            <!--//Slider-->                                                            
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>                    
+                        <div class="span_full module_cont module_title">
+                            <h3>IconBoxes</h3>
+                        </div>
+                        <div class="span1-3 module_iconboxes">
+                            <div class="iconbox_wrapper">                  
+                                <div class="ico">Z</div>
+                                <h5>Lorem ipsum</h5>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo urna ut erat.
+                            </div>
+                        </div>
+                        <div class="span1-3 module_iconboxes">                    
+                            <div class="iconbox_wrapper">                                      
+                                <div class="ico">P</div>
+                                <h5>eget mauris</h5>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo urna ut erat.
+                            </div>
+                        </div>
+                        <div class="span1-3 module_iconboxes">                    
+                            <div class="iconbox_wrapper">                  
+                                <div class="ico">e</div>
+                                <h5>vestibulum tor</h5>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo urna ut erat.
+                            </div>
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+                        <div class="span1-3 module_iconboxes">                    
+                            <div class="iconbox_wrapper">                  
+                                <div class="ico">*</div>
+                                <h5>consectetur elit</h5>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo urna ut erat.
+                            </div>
+                        </div>
+                        <div class="span1-3 module_iconboxes">                    
+                            <div class="iconbox_wrapper">                  
+                                <div class="ico">c</div>
+                                <h5>commodo sed</h5>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo urna ut erat.
+                            </div>
+                        </div>
+                        <div class="span1-3 module_iconboxes">                    
+                            <div class="iconbox_wrapper">                  
+                                <div class="ico">D</div>
+                                <h5>bibendum urna</h5>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo urna ut erat.
+                            </div>
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>                    
+
+                        <div class="span1-2">
+                            <h3>accordion</h3>
+                            <div class="shortcode_accordion_shortcode accordion">
+                                <h5 class="shortcode_accordion_item_title">
+                                    Eget mauris
+                                    <span class="ico">
+                                        <hr class="hr_v">
+                                        <hr class="hr_h">
+                                    </span>
+                                </h5>
+                                <div class="shortcode_accordion_item_body">
+                                    <div class="ip">
+                                        Nunc in est tellus. Suspendisse a mauris nunc, ut aliquet massam  at fringilla id, vehicula eget mi. Curabitur vel tortor elit donec. 
+                                    </div>
+                                </div>
+                                <h5 class="shortcode_accordion_item_title">
+                                    lorem ipsum dolor
+                                    <span class="ico">
+                                        <hr class="hr_v">
+                                        <hr class="hr_h">
+                                    </span>
+                                </h5>
+                                <div class="shortcode_accordion_item_body">
+                                    <div class="ip">
+                                        Nunc in est tellus. Suspendisse a mauris nunc, ut aliquet massam  at fringilla id, vehicula eget mi. Curabitur vel tortor elit donec. 
+                                    </div>
+                                </div>
+                                <h5 class="shortcode_accordion_item_title">
+                                    vivamus vehicula curabitur
+                                    <span class="ico">
+                                        <hr class="hr_v">
+                                        <hr class="hr_h">
+                                    </span>
+                                </h5>
+                                <div class="shortcode_accordion_item_body">
+                                    <div class="ip">
+                                        Nunc in est tellus. Suspendisse a mauris nunc, ut aliquet massam  at fringilla id, vehicula eget mi. Curabitur vel tortor elit donec. 
+                                    </div>
+                                </div>
+                                <h5 class="shortcode_accordion_item_title">
+                                    suscript efendi
+                                    <span class="ico">
+                                        <hr class="hr_v">
+                                        <hr class="hr_h">
+                                    </span>
+                                </h5>
+                                <div class="shortcode_accordion_item_body">
+                                    <div class="ip">
+                                        Nunc in est tellus. Suspendisse a mauris nunc, ut aliquet massam  at fringilla id, vehicula eget mi. Curabitur vel tortor elit donec. 
+                                    </div>
+                                </div>
+                            </div><!--.accordion--> 
+                        </div>
+                        <div class="span1-2">
+                            <h3>toggles</h3>
+                            <div class="shortcode_toggles_shortcode toggles">
+                                <h5 class="shortcode_toggles_item_title">
+                                    Eget mauris
+                                    <span class="ico">
+                                        <hr class="hr_v">
+                                        <hr class="hr_h">
+                                    </span>
+                                </h5>
+                                <div class="shortcode_toggles_item_body">
+                                    <div class="ip">
+                                        Nunc in est tellus. Suspendisse a mauris nunc, ut aliquet massam  at fringilla id, vehicula eget mi. Curabitur vel tortor elit donec. 
+                                    </div>
+                                </div>
+                                <h5 class="shortcode_toggles_item_title">
+                                    lorem ipsum dolor
+                                    <span class="ico">
+                                        <hr class="hr_v">
+                                        <hr class="hr_h">
+                                    </span>
+                                </h5>
+                                <div class="shortcode_toggles_item_body">
+                                    <div class="ip">
+                                        Nunc in est tellus. Suspendisse a mauris nunc, ut aliquet massam  at fringilla id, vehicula eget mi. Curabitur vel tortor elit donec. 
+                                    </div>
+                                </div>
+                                <h5 class="shortcode_toggles_item_title">
+                                    vivamus vehicula curabitur
+                                    <span class="ico">
+                                        <hr class="hr_v">
+                                        <hr class="hr_h">
+                                    </span>
+                                </h5>
+                                <div class="shortcode_toggles_item_body">
+                                    <div class="ip">
+                                        Nunc in est tellus. Suspendisse a mauris nunc, ut aliquet massam  at fringilla id, vehicula eget mi. Curabitur vel tortor elit donec. 
+                                    </div>
+                                </div>
+                                <h5 class="shortcode_toggles_item_title">
+                                    suscript efendi
+                                    <span class="ico">
+                                        <hr class="hr_v">
+                                        <hr class="hr_h">
+                                    </span>
+                                </h5>
+                                <div class="shortcode_toggles_item_body">
+                                    <div class="ip">
+                                        Nunc in est tellus. Suspendisse a mauris nunc, ut aliquet massam  at fringilla id, vehicula eget mi. Curabitur vel tortor elit donec. 
+                                    </div>
+                                </div>
+                            </div><!--.toggles-->
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>        
+                        <div class="span1-2">
+                            <h3>tabs</h3>
+                            <div class="shortcode_tabs">
+                                <div class="all_heads_cont">
+                                    <div class="shortcode_tab_item_title it1 head1 active" data-open="body1">tab 01</div>
+                                    <div class="shortcode_tab_item_title it2 head2" data-open="body2">tab 02</div>
+                                    <div class="shortcode_tab_item_title it3 head3" data-open="body3">tab 03</div>
+                                    <div class="shortcode_tab_item_title it4 head4" data-open="body4">tab 04</div>
+                                </div>
+                                <div class="all_body_cont">
+                                    <div class="shortcode_tab_item_body body1 it1">
+                                        <div class="ip">1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo urna ut erat bibrendum. cursus et sed in elit. In luctus massa sapien, non lorem condimentum eros. Vestibulum ultrices ligula eget tortor dictum lorem ipsums dolor sit amet, consectetur adipiscing elit.</div>
+                                    </div>
+                                    <div class="shortcode_tab_item_body body2 it2">
+                                        <div class="ip">2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo urna ut erat bibrendum. cursus et sed in elit. In luctus massa sapien, non lorem condimentum eros. Vestibulum ultrices ligula eget tortor dictum lorem ipsums dolor sit amet, consectetur adipiscing elit.</div>
+                                    </div>
+                                    <div class="shortcode_tab_item_body body3 it3">
+                                        <div class="ip">3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo urna ut erat bibrendum. cursus et sed in elit. In luctus massa sapien, non lorem condimentum eros. Vestibulum ultrices ligula eget tortor dictum lorem ipsums dolor sit amet, consectetur adipiscing elit.</div>
+                                    </div>
+                                    <div class="shortcode_tab_item_body body4 it4">
+                                        <div class="ip">4. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo urna ut erat bibrendum. cursus et sed in elit. In luctus massa sapien, non lorem condimentum eros. Vestibulum ultrices ligula eget tortor dictum lorem ipsums dolor sit amet, consectetur adipiscing elit.</div>
+                                    </div>
+                                </div>
+                            </div><!-- .shortcode_tabs -->                             
+                            <script type="text/javascript">
+                                jQuery('.shortcode_tabs').each(function(index) {
+                                    /* GET ALL HEADERS */
+                                    var i = 1;
+                                    jQuery('.shortcode_tab_item_title').each(function(index) {
+                                        jQuery(this).addClass('it' + i);
+                                        jQuery(this).attr('whatopen', 'body' + i);
+                                        jQuery(this).addClass('head' + i);
+                                        jQuery(this).parents('.shortcode_tabs').find('.all_heads_cont').append(this);
+                                        i++;
+                                    });
+                                    /* GET ALL BODY */
+                                    var i = 1;
+                                    jQuery('.shortcode_tab_item_body').each(function(index) {
+                                        jQuery(this).addClass('body' + i);
+                                        jQuery(this).addClass('it' + i);
+                                        jQuery(this).parents('.shortcode_tabs').find('.all_body_cont').append(this);
+                                        i++;
+                                    });
+                                });
+                                jQuery('.shortcode_tabs .all_body_cont div:first-child').addClass('active');
+                                jQuery('.shortcode_tabs .all_heads_cont div:first-child').addClass('active');
+
+                                jQuery('.shortcode_tab_item_title').live('click', function() {
+                                    jQuery(this).parents('.shortcode_tabs').find('.shortcode_tab_item_body').removeClass('active');
+                                    jQuery(this).parents('.shortcode_tabs').find('.shortcode_tab_item_title').removeClass('active');
+                                    var whatopen = jQuery(this).attr('data-open');
+                                    jQuery(this).parents('.shortcode_tabs').find('.' + whatopen).addClass('active');
+                                    jQuery(this).addClass('active');
+                                });
+                            </script>   
+                        </div>
+                        <div class="span1-2">
+                            <h3>buttons</h3>
+                            <a href="#" class="shortcode_button btn_small btn_type1">Small button</a>
+                            <a href="#" class="shortcode_button btn_small btn_type4">Button</a>
+                            <a href="#" class="shortcode_button btn_small btn_type5">Button</a>
+                            <a href="#" class="shortcode_button btn_small btn_type6">Button</a>
+                            <a href="#" class="shortcode_button btn_small btn_type7">Button</a>
+                            <a href="#" class="shortcode_button btn_small btn_type8">Button</a>
+                            <br>
+                            <a href="#" class="shortcode_button btn_normal btn_type2">Medium button</a>
+                            <a href="#" class="shortcode_button btn_normal btn_type9">Medium button</a>
+                            <a href="#" class="shortcode_button btn_normal btn_type10">Medium button</a>
+                            <br>
+                            <a href="#" class="shortcode_button btn_large btn_type3">Large button</a>
+                            <a href="#" class="shortcode_button btn_large btn_type11">Large button</a>
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+                        <div class="span_full">
+                            <h3>my team</h3>
+                            <div class="team_slider">
+                                <div class="carouselslider teamslider" data-count="4">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team1.jpg" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>jake thompson</h5>
+                                                    <div class="op">Manager</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team2.jpg" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>amy goldberg</h5>
+                                                    <div class="op">Artist</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team3.jpg" alt="William" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>joe black</h5>
+                                                    <div class="op">Photographer</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team4.jpg" alt="Emily" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>sarah simpson</h5>
+                                                    <div class="op">Designer</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team1.jpg" alt="Ethan" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>jake thompson</h5>
+                                                    <div class="op">Manager</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team2.jpg" alt="Anthony" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>amy simpson</h5>
+                                                    <div class="op">Artist</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                    </ul>                        
+                                </div>
+                                <div class="clear"></div>
+                            </div><!-- .team_slider -->
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+
+                        <div class="span_full">
+                            <h3>featured posts</h3>
+                            <div class="featured_slider">
+                                <div class="carouselslider featured_posts" data-count="4">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_post1.jpg" /></div>
+                                                <div class="carousel_title">
+                                                    <h5 class="featured_ico_slider">Lorem ipsum dolr</h5>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis vestibulum eget. Lorem ipsum dolor sit amet. 
+                                                        <a href="#">Read more...</a></div>
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_post2.jpg" /></div>
+                                                <div class="carousel_title">
+                                                    <h5 class="featured_ico_video">vestibulum eget et</h5>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis vestibulum eget. Lorem ipsum dolor sit amet. 
+                                                        <a href="#">Read more...</a></div>
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_post3.jpg" alt="William" /></div>
+                                                <div class="carousel_title">
+                                                    <h5 class="featured_ico_img">morbi eget sapien</h5>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis vestibulum eget. Lorem ipsum dolor sit amet. 
+                                                        <a href="#">Read more...</a></div>
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_post4.jpg" alt="Emily" /></div>
+                                                <div class="carousel_title">
+                                                    <h5 class="featured_ico_slider">homo ridiculus!</h5>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis vestibulum eget. Lorem ipsum dolor sit amet. 
+                                                        <a href="#">Read more...</a></div>
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_post2.jpg" alt="Ethan" /></div>
+                                                <div class="carousel_title">
+                                                    <h5 class="featured_ico_video">Lorem ipsum dolor</h5>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis vestibulum eget. Lorem ipsum dolor sit amet. 
+                                                        <a href="#">Read more...</a></div>
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_post1.jpg" alt="Anthony" /></div>
+                                                <div class="carousel_title">
+                                                    <h5 class="featured_ico_img">homo ridiculus!</h5>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis vestibulum eget. Lorem ipsum dolor sit amet. 
+                                                        <a href="#">Read more...</a></div>
+                                                </div>
+                                            </div>
+                                        </li>  
+                                    </ul>                        
+                                </div>
+                                <div class="clear"></div>
+                            </div><!-- .team_slider -->
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+
+                        <div class="span_full">
+                            <h3>featured works</h3>
+                            <div class="featured_slider">
+                                <div class="carouselslider featured_works" data-count="4">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_work1.jpg" /><div class="works_hover"></div><a href="#" class="wrapped_link"></a></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_work2.jpg" /><div class="works_hover"></div><a href="#" class="wrapped_link"></a></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_work3.jpg" alt="William" /><div class="works_hover"></div><a href="#" class="wrapped_link"></a></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_work4.jpg" alt="Emily" /><div class="works_hover"></div><a href="#" class="wrapped_link"></a></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_work2.jpg" alt="Ethan" /><div class="works_hover"></div><a href="#" class="wrapped_link"></a></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/img_featured_work1.jpg" alt="Anthony" /><div class="works_hover"></div><a href="#" class="wrapped_link"></a></div>
+                                            </div>
+                                        </li>  
+                                    </ul>                        
+                                </div>
+                                <div class="clear"></div>
+                            </div><!-- .team_slider -->
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+
+                        <div class="span_full">
+                            <h3>promo text</h3>
+                            <div class="shortcode_promoblock">
+                                <div class="promo_text">
+                                    <h2>Cras hendrerit felis id metus gravida!</h2>
+                                    <h3>Curabitures etincidunt elementum justo sit amet accumsan</h3>
+                                </div>
+                                <div class="promo_button">
+                                    <a href="#" class="shortcode_button btn_large btn_type0">Large button</a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+
+                        <div class="span1-2">
+                            <h3>feedback form</h3>
+                            <form name="feedback_form" method="post" action="" class="feedback_form">
+                                <input type="text" name="field-name" value="Name*" title="Name*" class="field-name form_field">
+                                <input type="text" name="field-email" value="Email*" title="Email*" class="field-email form_field">
+                                <textarea name="field-message" cols="45" rows="5" title="Message*" class="field-message form_field">Message*</textarea>
+                                <input type="reset" name="reset" id="reset2" value="Clear" class="feedback_reset">
+                                <input type="button" name="submit" class="feedback_go" id="submit2" value="Send message"><div class="ajaxanswer"></div>
+                            </form>                        
+                        </div>
+                        <div class="span1-2 module_testimonial module_cont">
+                            <h3>testimonials</h3>
+                            <div class="module_content blockquote testimonials_list carouselslider" data-count="1">
+                                <ul>
+                                    <li>
+                                        <div class="item">
+                                            <div class="testimonials_photo">
+                                                <img src="http://www.gt3themes.com/website-templates/showroom/img/avatars/avatar1.jpg">
+                                            </div>
+                                            <div class="testimonials_text">
+                                                <p>Quisque eu ipsum dapibus quam et egets dignissim pharetra eget id nunc. Ut nec tortor lacus. Nam nislat elit, ullamcorper vitae suscipit ullamcorper vestibulum, urna miest. bibendum augue, eu fringilla eget purus metus eget urna. Nulla ac enim metus. Quisque eu ipsum dapibus quam et egets dignissim pharetra eget id nunc. Ut nec tortor lacus. Nam nislat elit, ullamcorper vitae suscipit, ullamcorper vestibulum, urna miest. bibendum augue, eu</p>
+                                                <p>Dapibus quam et egets dignissim pharetra eget id nunc. Ut nec eget tortor lacus. Nam nislat elit, ullamcorper vitae suscipit, ullamcorper vestibulum, urna miest. bibendum augue, eu fringilla eget purus mat metus eget urna. Nulla ac enim metus. Quisque eu ipsum dapibus quam et egets dignissim pharetra eget id nunc.</p>
+                                                <span class="author">Ammy Watson, </span>
+                                                <span class="author_position">Company inc.</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="testimonials_photo">
+                                                <img src="http://www.gt3themes.com/website-templates/showroom/img/avatars/avatar2.jpg">
+                                            </div>
+                                            <div class="testimonials_text">
+                                                <p>Quisque eu ipsum dapibus quam et egets dignissim pharetra eget id nunc. Ut nec tortor lacus. Nam nislat elit, ullamcorper vitae suscipit ullamcorper vestibulum, urna miest. bibendum augue, eu fringilla eget purus metus eget urna. Nulla ac enim metus. Quisque eu ipsum dapibus quam et egets dignissim pharetra eget id nunc. Ut nec tortor lacus. Nam nislat elit, ullamcorper vitae suscipit, ullamcorper vestibulum, urna miest. bibendum augue, eu</p>
+                                                <p>Dapibus quam et egets dignissim pharetra eget id nunc. Ut nec eget tortor lacus. Nam nislat elit, ullamcorper vitae suscipit, ullamcorper vestibulum, urna miest. bibendum augue, eu fringilla eget purus mat metus eget urna. Nulla ac enim metus. Quisque eu ipsum dapibus quam et egets dignissim pharetra eget id nunc.</p>
+                                                <span class="author">Tom Sawyer, </span>
+                                                <span class="author_position">Company inc.</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item">
+                                            <div class="testimonials_photo">
+                                                <img src="http://www.gt3themes.com/website-templates/showroom/img/avatars/no_avatar.jpg">
+                                            </div>
+                                            <div class="testimonials_text">
+                                                <p>Quisque eu ipsum dapibus quam et egets dignissim pharetra eget id nunc. Ut nec tortor lacus. Nam nislat elit, ullamcorper vitae suscipit ullamcorper vestibulum, urna miest. bibendum augue, eu fringilla eget purus metus eget urna. Nulla ac enim metus. Quisque eu ipsum dapibus quam et egets dignissim pharetra eget id nunc. Ut nec tortor lacus. Nam nislat elit, ullamcorper vitae suscipit, ullamcorper vestibulum, urna miest. bibendum augue, eu</p>
+                                                <p>Dapibus quam et egets dignissim pharetra eget id nunc. Ut nec eget tortor lacus. Nam nislat elit, ullamcorper vitae suscipit, ullamcorper vestibulum, urna miest. bibendum augue, eu fringilla eget purus mat metus eget urna. Nulla ac enim metus. Quisque eu ipsum dapibus quam et egets dignissim pharetra eget id nunc.</p>
+                                                <span class="author">Tom Sawyer, </span>
+                                                <span class="author_position">Company inc.</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+
+                        <div class="span_full">
+                            <h3>Socialize icons</h3>
+                            <div class="module_socialize">
+                                <a href="#" class="ico_socialize_facebook1 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_facebook2 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_twitter1 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_twitter2 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_twitter3 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_digg1 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_digg2 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_google1 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_google2 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_tumbler ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_delicious ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_plixi ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_dribbble1 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_dribbble2 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_stubleUpon ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_lastfm ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_moby ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_vimeo ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_youtube1 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_youtube2 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_myspace ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_linkedIn ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_pinterest ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_flickr ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_vk1 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_vk2 ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_odnoklassniki ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_gowalla ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_dropbox ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_skype ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_iChat ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_instagram ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_evernote ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_deviantart ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_blogspot ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_reddit ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_technorati ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_yahoo ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_diigo ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_blinklist ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_bing ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_behnce ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_picasa ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_forrst ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_ffffound  ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_viddler ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_friendfeed ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_mobileMe ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_wordpress ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_drupal ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_paypal ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_share ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_mail ico_socialize type1"></a>
+                                <a href="#" class="ico_socialize_rss ico_socialize type1"></a>
+                            </div>
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+
+                        <div class="span_full">
+                            <div class="module_socialize">
+                                <a href="#" class="ico_socialize_facebook1 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_facebook2 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_twitter1 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_twitter2 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_twitter3 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_digg1 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_digg2 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_google1 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_google2 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_tumbler ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_delicious ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_plixi ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_dribbble1 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_dribbble2 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_stubleUpon ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_lastfm ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_moby ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_vimeo ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_youtube1 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_youtube2 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_myspace ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_linkedIn ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_pinterest ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_flickr ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_vk1 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_vk2 ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_odnoklassniki ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_gowalla ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_dropbox ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_skype ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_iChat ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_instagram ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_evernote ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_deviantart ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_blogspot ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_reddit ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_technorati ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_yahoo ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_diigo ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_blinklist ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_bing ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_behnce ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_picasa ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_forrst ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_ffffound  ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_viddler ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_friendfeed ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_mobileMe ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_wordpress ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_drupal ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_paypal ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_share ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_mail ico_socialize type2"></a>
+                                <a href="#" class="ico_socialize_rss ico_socialize type2"></a>
+                            </div>
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+
+                        <div class="span_full">
+                            <h3>video frame</h3>
+                            <iframe width="340" height="190" src="http://www.youtube.com/embed/BTiZD7p_oTc?controls=1&amp;showinfo=0&amp;modestbranding=1&amp;wmode=opaque" frameborder="0" allowfullscreen class="alignleft video_frame"></iframe><p>Quisque libero magna, pharetra vel accumsan non, porta sit amet nisl. Cras magna ipsum, molestie vitae mollis consequat, eleifend et libero. Nulla at pretium nisi. Vestibulum aliquet ipsum sit amet eget lorem sollicitudin tincidunt. Aliquam accumsan, ipsum at feugiat vulputate, enim quam egestas risus, ac iterdum consectetur nunc eros et est. Ut euismod luctus nunc, non placerat mi elementum ac. Aenean sodales est sit amet magna gravida vestibulum. Fusce cursus lacinia mattis. Proin at risus ante, in volutpat lectus. Sed ultricies dignissim turpis, ultricies sagittis massa imperdiet ut. Nullam imperdiet viverra venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent erat tortor, dignissim non pulvinar et, laoreet et massa. Curabitur at lorem purus, aliquam aliquet ipsum. Nullam at orci magna. Aenean dignissim orci ut diam pretium tempor. Praesent bibendum tincidunt purus nec commodo. Cras suscipit dui ut quam suscipit consectetur. Mauris in lacus vitae neque iaculis porttitor laoreet faucibus ante. Aliquam erat volutpat. Sed in gravida tortor. Donec tincidunt pellentesque sollicitudin Donec mauris enim, vestibulum ac imperdiet in, adipiscing non erat. Mauris purus mi, ultricies id tempor ac, suscipit sit amet nunc. Nunc quisque libero magna, pharetra vel accumsan non, porta sit amet nisl. Cras magna ipsum, molestie vitae mollis consequat, eleifend et libero. Nulla at pretium nisi. Vestibulum aliquet ipsum sit amet lorem sollicitudin tincidunt. Aliquam accumsan, ipsum at feugiat vulputate, enim quam egestas risus, interdum consectetur nunc</p>
+                            <iframe width="340" height="190" src="http://www.youtube.com/embed/G_GBwuYuOOs?controls=1&showinfo=0&modestbranding=1&wmode=opaque" frameborder="0" allowfullscreen class="alignright video_frame"></iframe><p>Quisque libero magna, pharetra vel accumsan non, porta sit amet nisl. Cras magna ipsum, molestie vitae mollis consequat, eleifend et libero. Nulla at pretium nisi. Vestibulum aliquet ipsum sit amet eget lorem sollicitudin tincidunt. Aliquam accumsan, ipsum at feugiat vulputate, enim quam egestas risus, ac iterdum consectetur nunc eros et est. Ut euismod luctus nunc, non placerat mi elementum ac. Aenean sodales est sit amet magna gravida vestibulum. Fusce cursus lacinia mattis. Proin at risus ante, in volutpat lectus. Sed ultricies dignissim turpis, ultricies sagittis massa imperdiet ut. Nullam imperdiet viverra venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent erat tortor, dignissim non pulvinar et, laoreet et massa. Curabitur at lorem purus, aliquam aliquet ipsum. Nullam at orci magna. Aenean dignissim orci ut diam pretium tempor. Praesent bibendum tincidunt purus nec commodo. Cras suscipit dui ut quam suscipit consectetur. Mauris in lacus vitae neque iaculis porttitor laoreet faucibus ante. Aliquam erat volutpat. Sed in gravida tortor. Donec tincidunt pellentesque sollicitudin Donec mauris enim, vestibulum ac imperdiet in, adipiscing non erat. Mauris purus mi, ultricies id tempor ac, suscipit sit amet nunc. Nunc quisque libero magna, pharetra vel accumsan non, porta sit amet nisl. Cras magna ipsum, molestie vitae mollis consequat, eleifend et libero. Nulla at pretium nisi. Vestibulum aliquet ipsum sit amet lorem sollicitudin tincidunt. Aliquam accumsan, ipsum at feugiat vulputate, enim quam egestas risus, interdum consectetur nunc</p>         	                        
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+
+                        <div class="span1-2">
+                            <h3>Highlights</h3>
+                            <ul class="module_highlights">
+                                <li>Maecenas mattis dignissim orci ut diam pretium tempor</li>
+                                <li>Vel consectetur eget mauris lorem dolor</li>
+                            </ul>
+                        </div>
+                        <div class="span1-2">
+                            <h3>Dividers</h3>
+                            <hr class="light">
+                            <hr class="dark">
+                            <hr class="colored">
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+
+                        <div class="span_full module_cont module_title">
+                            <h3>message boxes</h3>
+                        </div>
+                        <div class="span1-2">
+                            <div class="module_notification box_error">
+                                <div class="module_notification_content">
+                                    <h5>Donec sed sapien ligula, non adipiscing gestas metus!</h5>
+                                    Vestib turpis nisi, euismod nec gravida id, semper in lorem. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span1-2">
+                            <div class="module_notification box_success">
+                                <div class="module_notification_content">
+                                    <h5>Donec sed sapien ligula, non adipiscing gestas metus!</h5>
+                                    Vestib turpis nisi, euismod nec gravida id, semper in lorem. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+                        <div class="span1-2">
+                            <div class="module_notification box_message">
+                                <div class="module_notification_content">
+                                    <h5>Donec sed sapien ligula, non adipiscing gestas metus!</h5>
+                                    Vestib turpis nisi, euismod nec gravida id, semper in lorem. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span1-2">
+                            <div class="module_notification box_warning">
+                                <div class="module_notification_content">
+                                    <h5>Donec sed sapien ligula, non adipiscing gestas metus!</h5>
+                                    Vestib turpis nisi, euismod nec gravida id, semper in lorem. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+                        <div class="span1-2">
+                            <div class="module_notification box_info">
+                                <div class="module_notification_content">
+                                    <h5>Donec sed sapien ligula, non adipiscing gestas metus!</h5>
+                                    Vestib turpis nisi, euismod nec gravida id, semper in lorem. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="span1-2">
+                            <div class="module_notification box_denied">
+                                <div class="module_notification_content">
+                                    <h5>Donec sed sapien ligula, non adipiscing gestas metus!</h5>
+                                    Vestib turpis nisi, euismod nec gravida id, semper in lorem. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+
+                        <div class="span_full module_price_table">
+                            <h3>price tables</h3>
+                            <div class="price_item" style="width:25%">
+                                <div class="price_item_wrapper">
+                                    <div class="price_item_title"><h2>basic</h2></div>
+                                    <div class="price_item_cost"><h1>$10<span>/mo</span></h1></div>
+                                    <div class="price_item_text">Tempus pretium auctor</div>
+                                    <div class="price_item_text"><a href="#">Cum lorem</a> sociis</div>
+                                    <div class="price_item_text"><a href="#">500Mb</a> eget natoque</div>
+                                    <div class="price_item_text"><a href="#">3% enatibus</a> et magnis</div>
+                                    <div class="price_item_btn"><a href="#" class="shortcode_button btn_large btn_type1">Get it now!</a></div>
+                                </div>
+                            </div>
+                            <div class="price_item most_popular" style="width:25%">
+                                <div class="price_item_wrapper">
+                                    <div class="price_item_title"><h2>professional</h2></div>
+                                    <div class="price_item_cost"><h1>$30<span>/mo</span></h1></div>
+                                    <div class="price_item_text">Tempus pretium auctor</div>
+                                    <div class="price_item_text"><a href="#">Lorem ipsum</a> sociis</div>
+                                    <div class="price_item_text"><a href="#">1Gb</a> eget natoque</div>
+                                    <div class="price_item_text"><a href="#">2% enatibus</a> et magnis</div>
+                                    <div class="price_item_btn"><a href="#" class="shortcode_button btn_large btn_type1">Get it now!</a></div>
+                                </div>
+                            </div>
+                            <div class="price_item" style="width:25%">
+                                <div class="price_item_wrapper">
+                                    <div class="price_item_title"><h2>business</h2></div>
+                                    <div class="price_item_cost"><h1>$50<span>/mo</span></h1></div>
+                                    <div class="price_item_text">Tempus pretium auctor</div>
+                                    <div class="price_item_text"><a href="#">Eget mas lorem</a> sociis</div>
+                                    <div class="price_item_text"><a href="#">3Gb</a> eget natoque</div>
+                                    <div class="price_item_text"><a href="#">1% enatibus</a> et magnis</div>
+                                    <div class="price_item_btn"><a href="#" class="shortcode_button btn_large btn_type1">Get it now!</a></div>
+                                </div>
+                            </div>
+                            <div class="price_item" style="width:25%">
+                                <div class="price_item_wrapper">
+                                    <div class="price_item_title"><h2>unlimited</h2></div>
+                                    <div class="price_item_cost"><h1>$80<span>/mo</span></h1></div>
+                                    <div class="price_item_text">Tempus pretium auctor</div>
+                                    <div class="price_item_text"><a href="#">Dolor vivamus</a> sociis</div>
+                                    <div class="price_item_text"><a href="#">500Mb</a> eget natoque</div>
+                                    <div class="price_item_text"><a href="#">3% enatibus</a> et magnis</div>
+                                    <div class="price_item_btn"><a href="#" class="shortcode_button btn_large btn_type1">Get it now!</a></div>
+                                </div>
+                            </div>
+                        </div><!-- .module_price_table -->
+                        <div class="clear"><!-- ClearFix --></div>
+
+                        <div class="span_full module_sponsors">
+                            <h3>our sponsors</h3>
+                            <div class="sponsors_slider">
+                                <div class="carouselslider sponsors_works" data-count="5">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_sponsor1.jpg" /></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_sponsor2.jpg" /></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_sponsor3.jpg" alt="William" /></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_sponsor4.jpg" alt="Emily" /></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_sponsor5.jpg" alt="Ethan" /></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_sponsor1.jpg" alt="Anthony" /></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_sponsor2.jpg" alt="Anthony" /></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_sponsor3.jpg" alt="Anthony" /></div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_sponsor4.jpg" alt="Anthony" /></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <script type="text/javascript" src="js/greyScale.js"></script>
+                                    <script type="text/javascript">
+                                        $(window).load(function() {
+                                            $('.sponsors_works').find('img').greyScale({fadeTime: 400, reverse: false});
+                                        });
+                                    </script>
+                                </div>
+                                <div class="clear"></div>
+                            </div><!-- .team_slider -->
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+                    </div>
+                </div>
+            </div><!-- .content_block -->
+        </div>
+        <!-- F O O T E R -->
+        <footer>
+            <div class="call_us"><div>feel free to call us: 8 800 456 78 90</div><span>|</span><div class="copy">&copy; 2020 Companyname. All Rights Reserved</div></div>
+            <ul class="socials">
+                <li><a href="#" class="ico ico_facebook" title="Facebook"></a></li>
+                <li><a href="#" class="ico ico_twitter" title="Twitter"></a></li>
+                <li><a href="#" class="ico ico_vimeo" title="Vimeo"></a></li>
+                <li><a href="#" class="ico ico_youtube" title="YouTube"></a></li>
+                <li><a href="#" class="ico ico_tumblr" title="Tumbler"></a></li>
+                <li><a href="#" class="ico ico_dribbble" title="Dribbble"></a></li>
+                <li><a href="#" class="ico ico_delicious" title="Delicious"></a></li>
+                <li><a href="#" class="ico ico_digg" title="Digg"></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

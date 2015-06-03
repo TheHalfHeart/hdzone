@@ -1,0 +1,172 @@
+/*All Font Families*/
+@font-face {
+    font-family: 'ThemeDevRegular';
+    src: url('fonts/themedev-webfont.eot?') format('eot'),
+         url('fonts/themedev-webfont.woff') format('woff'),
+         url('fonts/themedev-webfont.ttf') format('truetype'),
+         url('fonts/themedev-webfont.svg#themedevregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'vagrounded_btregular';
+    src: url('fonts/vagroundedbt-webfont.eot');
+    src: url('fonts/vagroundedbt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/vagroundedbt-webfont.woff') format('woff'),
+         url('fonts/vagroundedbt-webfont.ttf') format('truetype'),
+         url('fonts/vagroundedbt-webfont.svg#vagrounded_btregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+p, td, div, input, textarea { 
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+ul.menu li a,
+h1, h2, h3, h4, h5, h6,
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.dropcap,
+.btn_load_more,
+a.mainTitlePermalink h3,
+.postcomment,
+.shortcode_accordion_item_title,
+.shortcode_toggles_item_title,
+.shortcode_tab_item_title,
+.shortcode_button.btn_normal,
+.shortcode_button.btn_large,
+.price_item .price_item_cost h1 span,
+.gallery_block .load_more_grid span,
+.masonry_blog .contentarea blockquote p {
+	font-family: 'vagrounded_btregular';
+	font-weight:normal;
+}
+.call_us, 
+.call_us span, 
+.call_us div,
+header nav ul.sub-menu li a,
+.shortcode_button.btn_small {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.module_iconboxes .iconbox_wrapper .ico, .ico {
+	font-family: 'ThemeDevRegular'!important;
+}
+
+/*-- Font Sizes --*/
+header nav ul.menu li,
+header nav ul.menu li a {
+	font-size:14px;	
+	line-height:18px;	
+}
+
+.mainTitlePermalink h3, 
+.blogpost_title h3, 
+.postcomment,
+.postcomment {
+	font-size:20px;
+	line-height:22px;
+}
+
+.mainTitlePermalink span.post_type {
+	font-size:16px;
+	line-height:30px;		
+}
+
+/*.postcomment {
+	font-size:22px; 
+	line-height:30px; 	
+}*/
+
+.masonry_blog .blog_item .blogpost_title h3,
+.masonry_blog .blog_item .blogpost_title h3 a {
+	font-size:14px;
+	line-height:16px;
+}
+.masonry_blog .contentarea blockquote p {
+	font-size:14px;
+	line-height:16px;	
+}
+.btn_load_more {
+	font-size:20px;
+	line-height:40px;	
+}
+
+h1 {
+	font-size:40px; 
+	line-height:42px; 
+}
+h2 { 
+	font-size:24px; 
+	line-height:26px; 
+}
+h3 { 
+	font-size:20px; 
+	line-height:22px; 
+}
+h4 { 
+	font-size:18px; 
+	line-height:20px; 
+}
+h5 { 
+	font-size:14px; 
+	line-height:16px; 
+}
+h6 { 
+	font-size:12px; 
+	line-height:14px; 
+}
+
+.dropcap {
+	font-size:34px; 
+	line-height:34px; 	
+}
+.shortcode_tab_item_title {
+	font-size:14px;
+	line-height:32px;	
+}
+.shortcode_accordion_item_title, 
+.shortcode_toggles_item_title {
+	font-size:14px;		
+}
+.shortcode_button.btn_normal {
+	line-height:32px; 
+	font-size:14px; 	
+}
+.shortcode_button.btn_large {
+	line-height:38px; 
+	font-size:20px; 	
+}
+.shortcode_promoblock .promo_text h2 {
+	font-size:30px;
+	line-height:30px;	
+}
+.shortcode_promoblock .promo_text h3 {
+	font-size:20px;
+	line-height:20px;	
+}
+.price_item .price_item_title h2 {
+	line-height:28px;
+	font-size:25px;	
+}
+.price_item .price_item_cost h1 {
+	line-height:50px;
+	font-size:46px;		
+}
+.price_item .price_item_cost h1 span {
+	line-height:50px;
+	font-size:20px;		
+}
+.price_item.most_popular .price_item_cost h1 {
+	line-height:56px;
+	font-size:52px;		
+}
+.price_item.most_popular .price_item_cost h1 span {
+	line-height:56px;
+	font-size:26px;	
+}
+div.zoomer_wrapper div.fader span.fader_caption {
+	font-size:14px;
+	line-height:15px;	
+}

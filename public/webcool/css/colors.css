@@ -1,0 +1,61 @@
+/*MainColor: #ef2748*/
+
+::selection {background:#ef2748;}
+::-moz-selection {background:#ef2748;}
+
+.feedback_form .feedback_go, 
+.send_comment,
+.pagerblock li a.current,
+.grid_img_wrapper .grid_overlay,
+.portfolio_wrapper,
+.ico_link:hover, .ico_zoom:hover,
+.widget_flickr .img_wrapper .img_fadder,
+ul.skills_list li div,
+.shortcode_button.btn_type1:hover,
+.price_item.most_popular .price_item_btn a,
+.price_item.most_popular .price_item_title,
+.shortcode_button.btn_type0,
+.masonry_blog .blog_item .featured_image_full .featured_image_wrapper,
+.featured_slider .works_hover,
+.feedback_form .feedback_reset:hover,
+.comment_reset:hover,
+.landing_logo {
+	background:#ef2748;
+}
+
+.team_slider ul li .smallproflinks a:hover,
+.module_iconboxes .iconbox_wrapper:hover .ico {
+	background-color:#ef2748;
+}
+
+a, a:hover, a:visited,
+header nav ul li.current-menu-item a,
+.filter_navigation ul li ul li a:hover,
+.filter_navigation ul li ul li.selected a,
+.widget_block_list li a:hover,
+.text_color, 
+.text_light a, 
+.text_color a:hover,
+.dropcap.colored,
+ul.list li:before,
+ol.list li:before,
+.price_item.most_popular .price_item_text a,
+.price_item.most_popular .price_item_cost h1,
+.price_item.most_popular .price_item_cost h1 span,
+.module_highlights li:hover {
+	color:#ef2748
+}
+
+header {
+	border-top-color:#ef2748;
+}
+
+header nav ul.sub-menu,
+.shortcode_button.btn_type1:hover,
+.shortcode_button.btn_type0 {
+	border-color:#ef2748;
+}
+
+hr.colored {
+	border-color:#ef2748!important;
+}

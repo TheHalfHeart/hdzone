@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HD zone</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/jquery.bxslider.css" />
+<script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.bxslider.js"></script>
+
+
+<script>
+	$(document).ready(function() {
+		$('.menu_top ul ul li').hover(function(){
+			$(this).parent().prev().addClass('active');	
+		},function(){
+			$(this).parent().prev().removeClass('active');
+		});
+		
+		
+		$(document).ready(function(){
+		  $('#bx_slide_home').bxSlider({
+			  });
+		});
+		
+		$(function() {
+			var zIndexNumber = 1000;
+			$('.header').each(function() {
+				$(this).css('zIndex', zIndexNumber);
+				zIndexNumber -= 10;
+			});
+		});
+		
+		$('.news_desc .item:last-child').css({'border':'none'});
+		
+		
+	});
+
+</script>
+</head>
+
+<body>
+	<div class="form_order_video">
+		<form>
+			<h3>điền thông tin liên hệ, để hoàn tất thao tác chọn film</h3>
+			<label>Tên khách hàng</label><input type="text" class="txt_input" />
+			<div class="clear"></div>
+			<label>Điện thoại</label><input type="text" class="txt_input" />
+			<div class="clear"></div>
+			<label>Email</label><input type="text" class="txt_input" />
+			<div class="clear"></div>
+			<label>Nội dung</label><textarea class="txt_content"></textarea>
+			<div class="clear"></div>
+			<input type="submit" class="bt_submit" value="gủi"/>
+			<input type="reset" class="bt_reset" value="hủy"/>
+		</form>
+	</div><!--end form_order_video-->
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HD zone</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/jquery.bxslider.css" />
+<script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.bxslider.js"></script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+
+
+<script>
+	$(document).ready(function() {
+		$('.menu_top ul ul li').hover(function(){
+			$(this).parent().prev().addClass('active');	
+		},function(){
+			$(this).parent().prev().removeClass('active');
+		});
+		
+		
+		$(document).ready(function(){
+		  $('#bx_slide_home').bxSlider({
+			  });
+		});
+		
+		$(function() {
+			var zIndexNumber = 1000;
+			$('.header').each(function() {
+				$(this).css('zIndex', zIndexNumber);
+				zIndexNumber -= 10;
+			});
+		});
+		
+		
+		$('.news_desc .item:last-child').css({'border':'none'});
+		
+		
+	});
+
+</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper_header">
+			<div class="header">
+				<div class="logo">
+					<a href=""><img src="images/logo.png" /></a>
+				</div><!--end logo-->
+				<div class="header_top">
+					<ul>
+						<li class="bg_1"><a href="giohang.html">Giỏ hàng<span>[0]</span></a></li>
+						<li><a href="">Số phim [0]</a></li>
+						<li><a href="">Dung lượng [0]</a></li>
+						<li><a href="">Phí copy [0]</a></li>
+						<li class="bg_2"><a href="login.html">Đăng nhập</a></li>
+						<li class="bg_3"><a href="login.html">Đăng kí</a></li>
+					</ul>
+					<div class="lang">
+						<a href=""><img src="images/img_vi.png" /></a>
+						<a href=""><img src="images/img_en.png" /></a>
+					</div>
+					<div class="clear"></div>
+				</div><!--end header_top-->
+				<div class="menu_top">
+					<ul>
+						<li class="list_1"><a href="index.html">TRANG CHỦ</a></li>
+						<li class="list_2"><a href="thiet bi hd.html">THIẾT BỊ HD</a>
+							<ul>
+								<li><a href="">Đầu phát HD</a></li>
+								<li><a href="">Đầu phát HD</a>
+									<ul>
+										<li><a href="">Đầu phát HD</a></li>
+										<li><a href="">Thiết bị lưu trữ</a></li>
+										<li><a href="">Phụ kiện HD</a></li>
+										<li><a href="">Giàn âm thanh</a></li>
+									</ul>
+								</li>
+								<li><a href="">Đầu phát HD</a></li>
+								<li><a href="">Đầu phát HD</a></li>
+							</ul>	
+						</li>
+						<li class="list_3"><a href="poster_fim.html">CHỌN PHIM HD</a></li>
+						<li class="list_4"><a href="list_film.html">XEM PHIM ONLINE</a></li>
+						<li class="list_5"><a href="index.html">TIN TỨC</a></li>
+						<li class="list_6"><a href="lienhe.html">LIÊN HỆ</a></li>
+					</ul>
+				</div><!--end menu_top-->
+				<div class="like_facebook"><img src="images/add_facebook.png" /></div>
+			</div><!--end wrapper_header-->
+		</div><!--end header-->
+		<div class="content">
+			<div class="main_content">
+				<div class="banner_home">
+					<ul id="bx_slide_home">
+						<li><img src="images/img_slide_1.png" /></li>
+						<li><img src="images/img_slide_2.png" /></li>
+					</ul>
+					<div class="bg_banner_home"></div>
+				</div><!--end banner_home-->
+				<div class="primary">
+					<div class="main_product">
+						<div class="title_module">
+							<div class="title_module_left"></div>
+							<div class="title_module_center"><a href="">Dau HD</a></div>
+							<div class="title_module_right"></div>
+							<div class="clear"></div>
+						</div><!--end title_module-->
+
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_thietbi.html"><img src="images/img_item_product.png" /></a>
+							<h3><a href="chitiet_thietbi.html">Đầu phát HD</a></h3>
+							<span>4.950.000 VND</span>
+						</div><!--end item-->
+						<div class="clear"></div>
+					</div><!--end main_product-->
+					<div class="pager">
+						<a href="" class="first-child"><img src="images/page_prev.png" /></a>
+						<a href="" class="active">1</a>
+						<a href="">2</a>
+						<a href="">3</a>
+						<a href="" class="last-child"><img src="images/page_next.png" /></a>
+					</div><!--end pager-->
+				
+				</div><!--end primary-->
+				<div class="sidebar_right">
+					<div class="cate_right">
+						<div class="title_module">
+							<div class="title_module_left"></div>
+							<div class="title_module_center"><a href="">Danh mục sản phẩm</a></div>
+							<div class="title_module_right"></div>
+							<div class="clear"></div>
+						</div><!--end title_module-->
+						<ul class="product_cate">
+							<li><a href="">Gói Combo tiết kiệm</a></li>
+							<li><a href="">Đầu phát HD</a>
+								<ul>
+									<li><a href="">- Đầu phát HD</a></li>
+									<li><a href="">- Thiết bị lưu trữ</a></li>
+									<li><a href="">- Box, dock ổ cứng</a></li>
+									<li><a href="">- Giàn âm thanh</a></li>
+									<li><a href="">- Phụ kiện HD</a></li>
+								</ul>
+							</li>
+							<li><a href="">Thiết bị lưu trữ</a></li>
+							<li><a href="">Box, dock ổ cứng</a></li>
+							<li><a href="">Giàn âm thanh</a></li>
+							<li><a href="">Phụ kiện HD</a></li>
+							<li><a href="">Hàng đã qua sử dụng</a></li>
+						</ul>
+					</div><!--end cate_right-->
+					<div class="ads_home">
+						<div class="title_module">
+							<div class="title_module_left"></div>
+							<div class="title_module_center"><a href="">banner quảng cáo</a></div>
+							<div class="title_module_right"></div>
+							<div class="clear"></div>
+						</div><!--end title_module-->
+						<div class="item">
+							<a href=""><img src="images/ads_img_1.png" /></a>
+							<a href=""><img src="images/ads_img_2.png" /></a>
+							<a href=""><img src="images/ads_img_3.png" /></a>
+						</div><!--end item-->
+					</div><!--end ads_home-->
+					<div class="support">
+						<div class="title_module">
+							<div class="title_module_left"></div>
+							<div class="title_module_center"><a href="">hổ trợ online</a></div>
+							<div class="title_module_right"></div>
+							<div class="clear" style="margin-bottom:15px;"></div>
+						</div><!--end title_module-->
+						<span>Tìm kiếm:</span>
+						<form>
+							<input type="text" class="txt_keyword" />
+							<input type="submit" class="bt_search" value=""/>
+						</form>
+						<div class="clear" style="margin-bottom:10px;"></div>
+						<span>Nick yahoo:</span> 
+						<a href=""><img src="images/yahoo_off.png" /></a>
+						<a href=""><img src="images/yahoo_on.png" /></a>                       
+						<span>Hotline:</span>
+						<h2>0976.878.346</h2>
+						<div class="clear"></div>
+					</div><!--end support-->
+					
+					<div class="news_desc">
+						<div class="title_module">
+							<div class="title_module_left"></div>
+							<div class="title_module_center"><a href="">Tin gần đây</a></div>
+							<div class="title_module_right"></div>
+							<div class="clear"></div>
+						</div><!--end title_module-->
+						<div class="clear"></div>
+						<div class="item">
+							<a href="chitiet_tin.html"><img src="images/img_new1.png" /></a>
+							<h3><a href="chitiet_tin.html">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						<div class="item">
+							<a href=""><img src="images/img_new1.png" /></a>
+							<h3><a href="">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_tin.html"><img src="images/img_new1.png" /></a>
+							<h3><a href="chitiet_tin.html">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_tin.html"><img src="images/img_new1.png" /></a>
+							<h3><a href="chitiet_tin.html">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_tin.html"><img src="images/img_new1.png" /></a>
+							<h3><a href="chitiet_tin.html">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_tin.html"><img src="images/img_new1.png" /></a>
+							<h3><a href="chitiet_tin.html">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						
+					</div><!--end news_desc-->
+					
+					
+					<div class="news_desc">
+						<div class="title_module">
+							<div class="title_module_left"></div>
+							<div class="title_module_center"><a href="">Tin xem nhiều</a></div>
+							<div class="title_module_right"></div>
+							<div class="clear"></div>
+						</div><!--end title_module-->
+						<div class="clear"></div>
+						<div class="item">
+							<a href="chitiet_tin.html"><img src="images/img_new1.png" /></a>
+							<h3><a href="chitiet_tin.html">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_tin.html"><img src="images/img_new1.png" /></a>
+							<h3><a href="chitiet_tin.html">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_tin.html"><img src="images/img_new1.png" /></a>
+							<h3><a href="chitiet_tin.html">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_tin.html"><img src="images/img_new1.png" /></a>
+							<h3><a href="chitiet_tin.html">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_tin.html"><img src="images/img_new1.png" /></a>
+							<h3><a href="chitiet_tin.html">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						<div class="item">
+							<a href="chitiet_tin.html"><img src="images/img_new1.png" /></a>
+							<h3><a href="chitiet_tin.html">Dùng thử Facebook Home phiên bản bị rò rỉ: một trải nghiệm mới lạ. </a></h3>
+							<span>[04/04/2013]</span>
+							<div class="clear"></div>
+						</div><!--end item-->
+						
+					</div><!--end news_desc-->
+				</div><!--end sidebar_right-->
+				<div class="clear"></div>
+			</div><!--main_content-->
+		</div><!--end content-->
+		<div class="footer">
+			<div class="main_footer">
+				<ul class="menu_footer">
+					<li><a href="">trang chủ</a></li>
+					<li><a href="">thiết bị hd</a></li>
+					<li><a href="">chọn phim hd</a></li>
+					<li><a href="">xem phim online</a></li>
+					<li><a href="">tin tức</a></li>
+					<li><a href="">liên hệ</a></li>
+				</ul><!--emd menu_footer-->
+				<div class="clear"></div>
+				<div class="name_company">Copyright 2013 ViMobi Co., Ltd • Giấy phép số 24/GP-TTĐT và 59/GXN-TTĐT do Bộ TTTT cấp</div><!--end name_company-->
+				<div class="footer_right">
+					<div class="count_view">
+						<span><h2 class="first-child">Đang truy cập: 09 </h2><h2 class="last-child" >Tổng truy cập: 1000</h2><span><div class="clear"></div>
+					</div>
+					<div class="design_by"><a href="">Thiết kế </a>bởi <a href="">viet solution</a></div>
+				</div><!--footer_right-->
+				<div class="clear"></div>
+			</div><!--emd main_footer-->
+		</div><!--end footer-->
+		
+	</div><!--end wrapper-->
+
+
+</body>
+</html>

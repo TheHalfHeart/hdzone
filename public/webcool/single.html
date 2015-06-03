@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="ie ie9"> <!--<![endif]-->
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+
+        <!-- Mobile Specific Metas
+        +++++++++++++++++++++++++++ -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <link rel="shortcut icon" href="http://www.gt3themes.com/website-templates/showroom/http://www.gt3themes.com/website-templates/showroom/http://www.gt3themes.com/website-templates/showroom/img/favicon.ico">
+        <title>ShowRoom - Next amazing html5 portfolio template</title>
+
+        <!-- Styles
+        +++++++++++++ -->	
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/colors.css">
+        <link rel="stylesheet" type="text/css" href="css/base.css">
+        <link rel="stylesheet" type="text/css" href="css/base_responsive.css">
+        <!-- Fonts&Plugins -->
+        <link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+        <link rel="stylesheet" type="text/css" href="css/tipsy.css" />
+        <link rel="stylesheet" type="text/css" href="css/portfolio_isotope.css" />
+        <link rel="stylesheet" href="css/camera.css">
+
+        <!-- Scripts
+        +++++++++++++ -->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.8.2/jquery-ui.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.tipsy.js"></script>
+        <script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+        <script type="text/javascript" src="js/hoverIntent.js"></script>
+        <script type="text/javascript" src="js/superfish.js"></script>
+        <script type="text/javascript" src="js/jquery.form.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="js/sorting.js"></script>
+        <script type='text/javascript' src='js/camera.min.js'></script>
+        <script type="text/javascript" src="js/jflickrfeed.js"></script>
+        <script type="text/javascript" src="js/jquery.tweet.js"></script>
+        <script type="text/javascript" src="js/fakeElement-grid.js"></script>
+        <script type="text/javascript" src="js/jquery.carousel.min.js" ></script>            
+        <script type="text/javascript" src="js/jquery.jplayer.min.js" ></script>    
+        <script type="text/javascript" src="js/jquery.masonry.min.js" ></script>
+        <!-- Main Scrip Run -->
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+
+    <body>
+        <img src="http://www.gt3themes.com/website-templates/showroom/img/my_preloader1.gif" id="preloader">
+        <!-- H E A D E R -->
+        <header>
+            <a href="home.html" class="logo"><img src="http://www.gt3themes.com/website-templates/showroom/img/logo.jpg" alt=""></a>
+            <script type="text/javascript">
+                var noAudio = false;
+                if (
+                        navigator.userAgent.match(/webOS/i) ||
+                        navigator.userAgent.match(/iPhone/i) ||
+                        navigator.userAgent.match(/iPod/i))
+                {
+                    noAudio = true;
+                }
+                $(document).ready(function() {
+                    if (!noAudio) {
+                        $("#jquery_jplayer_1").jPlayer({
+                            ready: function(event) {
+                                $(this).jPlayer("setMedia", {
+                                    mp3: "media/track.mp3",
+                                    oga: "media/track.ogg"
+                                });
+                            },
+                            swfPath: "js",
+                            supplied: "mp3, oga",
+                            wmode: "window"
+                        });
+                    }
+                });
+            </script>
+            <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+            <div id="jp_container_1" class="jp-audio">
+                <div class="jp-type-single">
+                    <div class="jp-gui jp-interface">
+                        <div class="jp-controls">
+                            <a href="javascript:void(0)" class="jp-play"></a>
+                            <a href="javascript:void(0)" class="jp-pause"></a>					</div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="current-menu-item"><a href="about.html">About</a></li>
+                    <li><a href="javascript:void(0)">portfolio</a>
+                        <ul class="sub-menu">
+                            <li><a href="portfolio1.html">1 Column</a></li>
+                            <li><a href="portfolio2.html">2 Columns</a></li>
+                            <li><a href="portfolio3.html">3 Columns</a></li>
+                            <li><a href="portfolio4.html">4 Columns</a></li>
+                            <li><a href="portfolio_grid.html">Grid Columns</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">features</a>
+                        <ul class="sub-menu">
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="shortcodes.html">Shortcodes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="masonry_blog.html">Masonry blog</a></li>
+                            <li><a href="blog_full.html">Full width</a></li>
+                            <li><a href="blogpost_full.html">Blog post</a></li>
+                            <li><a href="javascript:void(0)">With sidebar</a>
+                                <ul class="sub-menu">
+                                    <li><a href="blog_left.html">Left sidebar</a></li>
+                                    <li><a href="blog_right.html">Right sidebar</a></li>
+                                    <li><a href="blogpost_sidebar.html">Blog post</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">contacts</a>
+                        <ul class="sub-menu">
+                            <li><a href="contact_full.html">Full width</a></li>
+                            <li><a href="contact_sidebar.html">With sidebar</a></li>
+                        </ul>
+                    </li>                
+                </ul><!-- .menu -->
+            </nav>
+            <nav class="mobile_header">
+                <select id="mobile_select"></select>
+            </nav>        
+            <div class="clear"></div>
+        </header>
+        <!-- C O N T E N T -->
+        <div class="content_wrapper">
+            <div class="content_block">
+                <h1><span>about me. lorem ipsum dolor</span></h1>
+                <div class="breadcrumbs">
+                    <ul class="pathway">
+                        <li><a href="home.html">Home</a></li>
+                        <li class="sep">:</li>
+                        <li>About</li>
+                    </ul>
+                </div><!-- .breadcrumbs -->
+
+                <div class="contentarea">
+                    <div class="row">
+                        <div class="span_full">
+                            <img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_about.jpg" class="full_width">
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+                        <div class="span2-3">
+                            <h3><span>who i am?</span></h3>
+                            <p><strong>Duis ac sem dui. Vestibulum id ante felis.</strong> Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis sed nullat. Nullam a tellus nec sapien dolro dolor elementum laoreet vitae consequat tellus mases Quisque sagittis pretium leo, id lorem interdum turpis molestie quis.</p>
+                            <p><strong>Maecenas aliquame tortor quis elitast luctus.</strong> Morbi nib turpis, cursus ac vehicula ut, dignissim eu eros. Ut quis dolor lectus. Integer vitae nisl ligula eget Maecenas nec nunc nisl, et vestibulum quam. Integer imperdiet felis. Lorem ipsum dolor sit amet egestas mauris ridiculus donec aliquam. Sed dapibus ornare egets. sagittis. Class aptent taciti sociosqu ad litora. Donec gravida turpis sed velit enim. Aliquam id nuc nec fels es. Sed dapibus ornare egets. sagittis. Class aptent taciti sociosqu placerat lacinia. Posuere eget malesuada orci viverra.  Curabitur sed imperdiet neque magnat aliquam.</p>
+                        </div>
+                        <div class="span1-3">
+                            <h3><span>my skills</span></h3>
+                            <ul class="skills_list">
+                                <li>Lorem ipsum <strong>89%</strong><div style="width:89%"></div></li>
+                                <li>Vestibulum eget <strong>100%</strong><div style="width:100%"></div></li>
+                                <li>Dolor sit amet <strong>92%</strong><div style="width:92%"></div></li>
+                                <li>Eget mauris mas <strong>65%</strong><div style="width:65%"></div></li>
+                            </ul>
+                        </div>
+                        <div class="clear"><!-- ClearFix --></div>
+                        <div class="span_full module_cont module_teamslider">
+                            <h3>my team</h3>
+                            <div class="team_slider">
+                                <div class="carouselslider teamslider" data-count="4">
+                                    <ul class="item_list">
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team1.jpg" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>jake thompson</h5>
+                                                    <div class="op">Manager</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team2.jpg" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>amy goldberg</h5>
+                                                    <div class="op">Artist</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team3.jpg" alt="William" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>joe black</h5>
+                                                    <div class="op">Photographer</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team4.jpg" alt="Emily" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>sarah simpson</h5>
+                                                    <div class="op">Designer</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team3.jpg" alt="Ethan" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>jake thompson</h5>
+                                                    <div class="op">Manager</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                        <li>
+                                            <div class="item">
+                                                <div class="img_block"><img src="http://www.gt3themes.com/website-templates/showroom/img/pictures/pic_team2.jpg" alt="Anthony" /></div>
+                                                <div class="carousel_title">
+                                                    <h5>amy simpson</h5>
+                                                    <div class="op">Artist</div>
+                                                </div>
+                                                <div class="carousel_desc">                                                
+                                                    <div class="exc">Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis</div>
+                                                    <div class="smallproflinks"><a href="some facebook" class="facebook_link tiptip" title="Facebook"></a><a href="some twitter" class="twitter_link tiptip" title="Twitter"></a><a href="some vimeo" class="vimeo_link tiptip" title="Vimeo"></a></div>          		  
+                                                </div>
+                                            </div>
+                                        </li>  
+                                    </ul>                        
+                                </div>
+                                <div class="clear"></div>
+                            </div><!-- .team_slider -->
+                            <p>Morbi eget sapien sem, iaculisеs tes et molestie ut, dolor venenatis sed nullat. Nullam a tellus nec sapien dolro dolor elementum laoreet vitae consequat tellus egets mases Quisque sagittis pretium leo, id lorem interdum turpis molestie quis. Morbi nib turpis, cursus ac vehicula ut, dignissim eu eros. Ut quis dolor lectus.</p>
+                        </div>
+                    </div><!-- .row -->
+                </div>
+            </div><!-- .content_block -->
+        </div>
+        <!-- F O O T E R -->
+        <footer>
+            <div class="call_us"><div>feel free to call us: 8 800 456 78 90</div><span>|</span><div class="copy">&copy; 2020 Companyname. All Rights Reserved</div></div>
+            <ul class="socials">
+                <li><a href="#" class="ico ico_facebook" title="Facebook"></a></li>
+                <li><a href="#" class="ico ico_twitter" title="Twitter"></a></li>
+                <li><a href="#" class="ico ico_vimeo" title="Vimeo"></a></li>
+                <li><a href="#" class="ico ico_youtube" title="YouTube"></a></li>
+                <li><a href="#" class="ico ico_tumblr" title="Tumbler"></a></li>
+                <li><a href="#" class="ico ico_dribbble" title="Dribbble"></a></li>
+                <li><a href="#" class="ico ico_delicious" title="Delicious"></a></li>
+                <li><a href="#" class="ico ico_digg" title="Digg"></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

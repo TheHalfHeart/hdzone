@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>HD zone</title>
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/jquery.bxslider.css" />
+<script type="text/javascript" src="javascripts/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="javascripts/jquery.bxslider.js"></script>
+
+
+<script>
+	$(document).ready(function() {
+		$('.menu_top ul ul li').hover(function(){
+			$(this).parent().prev().addClass('active');	
+		},function(){
+			$(this).parent().prev().removeClass('active');
+		});
+		
+		
+		$(document).ready(function(){
+		  $('#bx_slide_home').bxSlider({
+			  });
+		});
+		
+		$(function() {
+			var zIndexNumber = 1000;
+			$('.header').each(function() {
+				$(this).css('zIndex', zIndexNumber);
+				zIndexNumber -= 10;
+			});
+		});
+		
+		$('.news_desc .item:last-child').css({'border':'none'});
+		
+		
+	});
+
+</script>
+</head>
+
+<body>
+	<div class="form_order_video">
+		<form>
+			<h3>Báo lỗi phim</h3>
+			<label>Họ tên</label><input type="text" class="txt_input" />
+			<div class="clear"></div>
+			<label>Số điện thoại:</label><input type="text" class="txt_input" />
+			<div class="clear"></div>
+			<label>Tài khoản:</label><input type="text" class="txt_input" />
+			<div class="clear"></div>
+			<label>Lỗi gặp phải:</label><select>
+				<option>--Lỗi phụ đề--</option>
+			</select>
+			<div class="clear"></div>
+			<label>Tập phim:</label><select>
+				<option>--Tập phim--</option>
+			</select>
+			<div class="clear"></div>
+			<label>Mô tả chi tiết</label><textarea class="txt_content"></textarea>
+			<div class="clear"></div>
+			<input type="submit" class="bt_submit" value="Báo lỗi"/>
+			<input type="reset" class="bt_reset" value="hủy"/>
+		</form>
+	</div><!--end form_order_video-->
+</body>
+</html>
